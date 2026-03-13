@@ -1,91 +1,272 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" class="scroll-smooth">
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Football Academy</title>
-
-<script src="https://cdn.tailwindcss.com"></script>
-
+  <meta charset="UTF-8" />
+  <title>Importance of Football</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
+<body class="m-0 p-0 box-border antialiased font-sans">
 
-<body class="bg-gray-100">
+  <!-- Page wrapper for sticky header + footer -->
+  <div class="min-h-screen flex flex-col bg-white text-gray-900">
 
+    <!-- Sticky Header with Logo + Nav -->
+    <header class="sticky top-0 z-50 bg-gray-900 text-white">
+      <div class="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
+        <!-- Logo -->
+        <div class="flex items-center gap-2">
+          <div class="w-8 h-8 bg-green-500 flex items-center justify-center text-xs font-bold uppercase tracking-widest">
+            FB
+          </div>
+          <span class="text-lg font-semibold tracking-wide">FootballLife</span>
+        </div>
 
+        <!-- Desktop Nav -->
+        <nav class="hidden md:flex gap-6 text-sm font-medium">
+          <a href="#hero" class="hover:text-green-400">Home</a>
+          <a href="#benefits" class="hover:text-green-400">Benefits</a>
+          <a href="#skills" class="hover:text-green-400">Skills</a>
+          <a href="#products" class="hover:text-green-400">Gear</a>
+          <a href="#footer" class="hover:text-green-400">Contact</a>
+        </nav>
 
-<nav class="bg-green-700 text-white">
+        <!-- Mobile Nav -->
+        <nav class="md:hidden flex gap-3 text-xs font-medium">
+          <a href="#hero" class="hover:text-green-400">Home</a>
+          <a href="#benefits" class="hover:text-green-400">Benefits</a>
+          <a href="#products" class="hover:text-green-400">Gear</a>
+        </nav>
+      </div>
+    </header>
 
-<div class="container mx-auto flex justify-between items-center p-4">
+    <!-- Full-screen Hero with background image + dark overlay + CTA -->
+    <section
+      id="hero"
+      class="relative h-screen flex items-center justify-center bg-cover bg-center bg-[url('https://images.pexels.com/photos/399187/pexels-photo-399187.jpeg')]"
+    >
+      <!-- Dark overlay -->
+      <div class="absolute inset-0 bg-black/70"></div>
 
-<h1 class="text-xl font-bold">Football Academy</h1>
+      <!-- Hero content -->
+      <div class="relative max-w-2xl mx-auto text-center px-4 text-white">
+        <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-wide leading-tight">
+          Football: The World’s Most Powerful Game
+        </h1>
+        <p class="mt-4 text-sm sm:text-base md:text-lg text-gray-200 leading-relaxed">
+          Football is more than a sport; it builds fitness, confidence, discipline, and friendship, 
+          while uniting people across cultures and countries.
+        </p>
+        <a
+          href="#benefits"
+          class="inline-block mt-6 px-8 py-3 bg-green-500 text-sm sm:text-base font-semibold uppercase tracking-wide hover:bg-green-400 hover:scale-105 transition-transform duration-150"
+        >
+          Explore Its Importance
+        </a>
+      </div>
+    </section>
 
-<ul class="flex gap-6">
-<li><a href="index.html">Home</a></li>
-<li><a href="skills.html">Skills</a></li>
-<li><a href="players.html">Players</a></li>
-<li><a href="training.html">Training</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
+    <!-- Main Content -->
+    <main class="flex-1">
 
-</div>
+      <!-- Section: Importance / Benefits -->
+      <section id="benefits" class="max-w-6xl mx-auto px-4 py-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 tracking-wide">
+          Why Football Matters
+        </h2>
+        <p class="mt-3 text-gray-700 leading-relaxed">
+          Football is one of the most popular sports in the world because it is simple to play, 
+          requires minimal equipment, and can be enjoyed almost anywhere. 
+          For many young people, it becomes a healthy way to spend free time and stay away from unhealthy habits.
+        </p>
 
-</nav>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+          <div class="bg-gray-50 p-5 shadow">
+            <h3 class="text-lg font-semibold text-green-700 tracking-wide">
+              Physical Fitness
+            </h3>
+            <p class="mt-2 text-gray-700 leading-relaxed">
+              Playing football improves stamina, strength, speed, and coordination. 
+              Continuous running and quick movements help the heart stay strong and keep the body active.
+            </p>
+          </div>
 
+          <div class="bg-gray-50 p-5 shadow">
+            <h3 class="text-lg font-semibold text-green-700 tracking-wide">
+              Mental Strength
+            </h3>
+            <p class="mt-2 text-gray-700 leading-relaxed">
+              The game teaches patience, focus, and resilience. 
+              Players learn how to handle pressure, accept defeat, and come back stronger in the next match.
+            </p>
+          </div>
 
+          <div class="bg-gray-50 p-5 shadow">
+            <h3 class="text-lg font-semibold text-green-700 tracking-wide">
+              Social Connection
+            </h3>
+            <p class="mt-2 text-gray-700 leading-relaxed">
+              Football connects people from different backgrounds and cultures. 
+              Teamwork on the field often turns into lifelong friendships off the field.
+            </p>
+          </div>
+        </div>
+      </section>
 
+      <!-- Section: Skills -->
+      <section id="skills" class="bg-gray-100">
+        <div class="max-w-6xl mx-auto px-4 py-12">
+          <h2 class="text-2xl md:text-3xl font-bold text-gray-900 tracking-wide">
+            Life Skills Learned Through Football
+          </h2>
+          <p class="mt-3 text-gray-700 leading-relaxed">
+            Football helps players develop important life skills that go far beyond the stadium. 
+            These skills are useful in school, work, and personal relationships.
+          </p>
 
-<section class="bg-green-600 text-white py-20">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+            <div class="bg-white p-5 shadow">
+              <h3 class="text-lg font-semibold text-green-700 tracking-wide">
+                Teamwork & Communication
+              </h3>
+              <p class="mt-2 text-gray-700 leading-relaxed">
+                Players must talk, plan, and support each other to win. 
+                This improves communication skills and teaches how to work with different personalities.
+              </p>
+            </div>
 
-<div class="container mx-auto text-center px-6">
+            <div class="bg-white p-5 shadow">
+              <h3 class="text-lg font-semibold text-green-700 tracking-wide">
+                Leadership & Responsibility
+              </h3>
+              <p class="mt-2 text-gray-700 leading-relaxed">
+                Captains and senior players guide the team, make quick decisions, and stay calm in tough moments, 
+                learning leadership and responsibility.
+              </p>
+            </div>
 
-<h1 class="text-5xl font-bold mb-6">
-Welcome to Football Academy
-</h1>
+            <div class="bg-white p-5 shadow">
+              <h3 class="text-lg font-semibold text-green-700 tracking-wide">
+                Discipline & Time Management
+              </h3>
+              <p class="mt-2 text-gray-700 leading-relaxed">
+                Regular practice, training schedules, and match preparation teach discipline. 
+                Students learn to balance studies, practice, and rest more effectively.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-<p class="max-w-2xl mx-auto text-lg">
-Football is the world's most popular sport. This website introduces football skills, famous players, training methods and learning resources for beginners.
-</p>
+      <!-- Responsive Product Grid: Football Gear -->
+      <section id="products" class="max-w-6xl mx-auto px-4 py-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 tracking-wide">
+          Essential Football Gear (Sample Products)
+        </h2>
+        <p class="mt-3 text-gray-700 leading-relaxed">
+          Proper gear keeps players safe and comfortable, making the game more enjoyable and reducing the risk of injury.
+        </p>
 
-</div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
+          <!-- Card 1 -->
+          <article class="border bg-white shadow-sm hover:shadow-md transition">
+            <div class="w-full h-40 bg-gray-200 flex items-center justify-center text-gray-500 text-xs tracking-wide">
+              Football Image
+            </div>
+            <div class="p-4">
+              <h3 class="text-sm font-semibold text-gray-900 tracking-wide">
+                Match-Quality Football
+              </h3>
+              <p class="mt-1 text-xs text-gray-600">
+                Durable outer cover, good grip, and accurate flight for serious training and school matches.
+              </p>
+              <p class="mt-2 text-sm font-semibold text-green-700">
+                Price: ₹1,499 (sample)
+              </p>
+            </div>
+          </article>
 
-</section>
+          <!-- Card 2 -->
+          <article class="border bg-white shadow-sm hover:shadow-md transition">
+            <div class="w-full h-40 bg-gray-200 flex items-center justify-center text-gray-500 text-xs tracking-wide">
+              Boots Image
+            </div>
+            <div class="p-4">
+              <h3 class="text-sm font-semibold text-gray-900 tracking-wide">
+                Studded Football Boots
+              </h3>
+              <p class="mt-1 text-xs text-gray-600">
+                Strong grip on grass, ankle support, and comfortable fit to improve movement and control.
+              </p>
+              <p class="mt-2 text-sm font-semibold text-green-700">
+                Price: ₹2,799 (sample)
+              </p>
+            </div>
+          </article>
 
+          <!-- Card 3 -->
+          <article class="border bg-white shadow-sm hover:shadow-md transition">
+            <div class="w-full h-40 bg-gray-200 flex items-center justify-center text-gray-500 text-xs tracking-wide">
+              Shin Guards
+            </div>
+            <div class="p-4">
+              <h3 class="text-sm font-semibold text-gray-900 tracking-wide">
+                Protective Shin Guards
+              </h3>
+              <p class="mt-1 text-xs text-gray-600">
+                Essential protection for lower legs, helping players stay safe during tackles and blocks.
+              </p>
+              <p class="mt-2 text-sm font-semibold text-green-700">
+                Price: ₹699 (sample)
+              </p>
+            </div>
+          </article>
 
+          <!-- Card 4 -->
+          <article class="border bg-white shadow-sm hover:shadow-md transition">
+            <div class="w-full h-40 bg-gray-200 flex items-center justify-center text-gray-500 text-xs tracking-wide">
+              Jersey Set
+            </div>
+            <div class="p-4">
+              <h3 class="text-sm font-semibold text-gray-900 tracking-wide">
+                Team Jersey & Shorts
+              </h3>
+              <p class="mt-1 text-xs text-gray-600">
+                Breathable fabric and light design keep players cool and comfortable during long matches.
+              </p>
+              <p class="mt-2 text-sm font-semibold text-green-700">
+                Price: ₹1,199 (sample)
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
 
+      <!-- Sample content block similar to your example -->
+      <section class="max-w-6xl mx-auto px-4 pb-12">
+        <div class="bg-white p-6 my-5 shadow">
+          <h2 class="text-green-800 text-2xl font-bold tracking-wide">
+            Short Note on Football’s Importance
+          </h2>
+          <p class="text-gray-700 leading-relaxed mt-3">
+            Football is important because it keeps the body fit, trains the mind to stay focused, and teaches respect for rules and opponents. 
+            It gives children and adults a healthy way to handle stress and emotions. 
+            By playing regularly, students learn how to cooperate, share success, and deal with failure in a positive way.
+          </p>
+        </div>
+      </section>
+    </main>
 
-<section class="py-16">
-
-<div class="container mx-auto px-6">
-
-<h2 class="text-3xl font-bold text-center mb-10">
-Explore Football Knowledge
-</h2>
-
-<div class="grid md:grid-cols-3 gap-8">
-
-<div class="bg-white p-6 shadow rounded">
-<h3 class="text-xl font-bold mb-2">Football Skills</h3>
-<p>Learn dribbling, passing and shooting techniques.</p>
-</div>
-
-<div class="bg-white p-6 shadow rounded">
-<h3 class="text-xl font-bold mb-2">Legendary Players</h3>
-<p>Discover the greatest football players in history.</p>
-</div>
-
-<div class="bg-white p-6 shadow rounded">
-<h3 class="text-xl font-bold mb-2">Training Methods</h3>
-<p>Understand drills and exercises used by professionals.</p>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
+    <!-- Footer -->
+    <footer id="footer" class="bg-gray-900 text-gray-300">
+      <div class="max-w-6xl mx-auto px-4 py-4 flex flex-col sm:flex-row items-center justify-between text-xs sm:text-sm">
+        <p class="tracking-wide">
+          © 2026 FootballLife. All rights reserved.
+        </p>
+        <p class="mt-2 sm:mt-0 tracking-wide">
+          Built with pure Tailwind CSS • No border-radius design
+        </p>
+      </div>
+    </footer>
+  </div>
 </body>
 </html>
